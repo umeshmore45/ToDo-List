@@ -8,7 +8,6 @@ window.onload = () => {
   li.addEventListener("click", () => {
     li.style.textDecoration = "line-through";
     li.style.color = "#00000066";
-    // console.log("hello");
   });
 
   // const button = document.createElement("button");

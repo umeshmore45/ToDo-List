@@ -18,7 +18,7 @@ export const formSubmission = (event) => {
 
   if (inputValidation(taskValue)) {
     ToDoData.push(taskObject);
-    document.getElementById("userList").appendChild(Task(local));
+    document.getElementById("userList").appendChild(Task(taskObject));
     //console.log(Task(local));
     document.forms.userInput.taskInput.value = "";
   }
