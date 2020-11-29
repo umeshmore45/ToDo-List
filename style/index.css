@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.logo-img {
+  width: 20%;
+  height: 15vh;
+  /* border: 2px solid red; */
+}
+
+img {
+  width: 40%;
+  height: 100%;
+}
+
+nav {
+  width: 30%;
+  margin-top: 2%;
+  /* border: 1px solid red; */
+}
+
+.li-items {
+  display: inline;
+  margin-left: 10%;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  font-size: 4vh;
+  display: block;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+#TaskInput {
+  width: 50%;
+  height: 7vh;
+  font-size: 5vh;
+  text-align: center;
+  display: block;
+  margin-left: 25%;
+  /* border: 2px solid red; */
+}
+
+#TaskInput:focus {
+  color: yellowgreen;
+  font-size: larger;
+}
+
+button {
+  width: 6%;
+  height: 5vh;
+  background-color: #0069d9;
+  color: aqua;
+  border-color: #0069d9;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+  border-color: white;
+}
+
+#bu {
+  margin-left: 43%;
+  margin-top: 2%;
+  margin-right: 1%;
+}
+
+.li-tag {
+  margin-top: 3%;
+  width: 52%;
+  height: 7vh;
+  margin-left: 23%;
+  /* border: 2px solid red; */
+  text-align: center;
+  list-style-type: none;
+  font-size: 4vh;
+  /* text-decoration: line-through; */
+  /* background-color: teal; */
+  background-color: white;
+}
+
+.li-tag button {
+  width: 12%;
+  height: 5vh;
+  margin-left: 3%;
+  font-size: 3vh;
+  /* background-image: url(../img/icons8-cancel-64.png);
+  background-size: cover; */
+  background-color: #0069d9;
+  color: aqua;
+}
+
+.li-tag button:hover {
+  background-color: blue;
+  color: white;
+}
+
+#li {
+  margin-top: 3%;
+  width: 51%;
+  height: 7vh;
+  margin-left: 25%;
+  /* border: 2px solid red; */
+  text-align: center;
+  list-style-type: none;
+  font-size: 4vh;
+  background-color: white;
+}
+
+main {
+  border: 2px solid #768a80;
+  background-color: #768a8033;
+  margin-top: 8%;
+  width: 99%;
+  /* height: 60vh; */
+}
+
+footer {
+  margin-top: 8%;
+  height: 20vh;
+  width: 100%;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.footer-icon i {
+  margin-top: 2%;
+  margin-right: 4%;
+}
+
+.footer-copy {
+  margin-top: 7vh;
+}
+
+.ham-contaner {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .logo-img {
+    width: 50%;
+    height: 15vh;
+    /* border: 2px solid red; */
+  }
+  #TaskInput {
+    width: 45%;
+    height: 5vh;
+  }
+  button {
+    width: 15%;
+  }
+  #bu {
+    margin-left: 35%;
+  }
+  .li-tag {
+    width: 80%;
+    margin-left: 6%;
+    font-size: 4vh;
+  }
+  main {
+    width: 99%;
+  }
+
+  .li-tag button {
+    width: 30%;
+    font-size: 3vh;
+  }
+
+  footer {
+    margin-top: 50%;
+  }
+  /* ham  */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .ham-contaner {
+    display: inherit;
+  }
+
+  .ham {
+    position: absolute;
+
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+    color: white;
+    background-color: blue;
+  }
+
+  /* change ham image to close */
+  .showClose {
+    background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+
+    transform: translateY(-100%);
+
+    transition: transform 0.2s ease;
+  }
+
+  .showNav {
+    transform: translateY(0);
+  }
+
+  .navbar ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navbar ul li a {
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .navbar ul li a:hover,
+  .navbar ul li a:focus {
+    border-bottom: 2px solid white;
+  }
+  nav {
+    display: none;
+  }
+}
