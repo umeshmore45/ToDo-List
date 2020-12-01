@@ -111,15 +111,38 @@ button:hover {
 }
 
 #li {
+  /* margin-top: 3%;
+  width: 51%;
+  /* height: 7vh; */
+  /* margin-left: 25%;
+  list-style-type: none;
+  border: 2px solid red;
+  text-align: center; */
+
+  /* font-size: 4vh; */
+  /* background-color: white; */
+  color: black;
+}
+
+.li-items1 {
   margin-top: 3%;
   width: 51%;
-  height: 7vh;
-  margin-left: 25%;
+  /* height: 7vh; */
+  padding: 0.7%;
+  margin-left: 23%;
+  list-style-type: none;
   /* border: 2px solid red; */
   text-align: center;
-  list-style-type: none;
+
   font-size: 4vh;
   background-color: white;
+  list-style-type: none;
+}
+.button-local {
+  width: 11%;
+  height: 5vh;
+  margin-left: 2%;
+  font-size: 3vh;
 }
 
 main {

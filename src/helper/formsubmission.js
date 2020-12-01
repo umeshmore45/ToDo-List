@@ -2,6 +2,9 @@ import { taskConstractor } from "./taskConstractor.js";
 import { Task } from "../compontes/task.js";
 import { ToDoData } from "../todolistdata.js";
 import { inputValidation } from "./inputvalidation.js";
+import { isStringEmpty } from "../helper/inputvalidation.js";
+import { isMarkUp } from "../helper/inputvalidation.js";
+
 export const formSubmission = (event) => {
   event.preventDefault();
   const taskObject = new taskConstractor(
@@ -9,17 +12,13 @@ export const formSubmission = (event) => {
   );
 
   localStorage.setItem("task", JSON.stringify(taskObject));
-
   let local = JSON.parse(localStorage.getItem("task"));
 
-  //console.log(local.id);
-
   let taskValue = document.forms.userInput.taskInput.value;
-
-  if (inputValidation(taskValue)) {
+  if (isMarkUp(taskValue) && isStringEmpty(taskValue)) {
     ToDoData.push(taskObject);
+    localStorage.setItem("data", JSON.stringify(ToDoData));
     document.getElementById("userList").appendChild(Task(taskObject));
-    //console.log(Task(local));
     document.forms.userInput.taskInput.value = "";
   }
 };

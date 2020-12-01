@@ -1,5 +1,5 @@
 import { deleteTask } from "./deletetask.js";
-
+import { removeBefore } from "../helper/removebefor.js";
 export const Task = (taskObject) => {
   const li = document.createElement("li");
   li.id = taskObject.id;
@@ -13,6 +13,7 @@ export const Task = (taskObject) => {
   button.innerHTML = "Delete";
   button.addEventListener("click", () => {
     deleteTask(taskObject.id);
+    removeBefore(taskObject.id);
   });
   li.append(button);
   //li.append(button1);

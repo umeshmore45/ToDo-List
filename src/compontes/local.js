@@ -6,3 +6,5 @@
 //   return local;
 // };
 export let local = JSON.parse(localStorage.getItem("task"));
+
+export let data = JSON.parse(localStorage.getItem("data") || "[]");

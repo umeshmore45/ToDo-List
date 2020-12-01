@@ -5,16 +5,18 @@ export const isStringEmpty = (str) => {
     window.alert("Add Some Task");
     return false;
   }
-  //console.log(str);
 };
 
 export const isMarkUp = (str) => {
-  //   if (str.matchAll()) {
-  //     return false;
-  //   } else {
-  //     return true;
-  //   }
-  return true;
+  var letters = /^[0-9a-zA-Z]+$/;
+  if (str.match(letters)) {
+    return true;
+  } else {
+    document.forms.userInput.taskInput.value = "";
+    window.alert("Add Text Only");
+    console.log("1");
+    return false;
+  }
 };
 
 export const inputValidation = (str) => {
