@@ -13,7 +13,7 @@ export const isMarkUp = (str) => {
     return true;
   } else {
     document.forms.userInput.taskInput.value = "";
-    window.alert("Add Text Only");
+    window.alert("Add Some Task");
     console.log("1");
     return false;
   }

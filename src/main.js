@@ -3,6 +3,7 @@ import { showLocal } from "./compontes/localdatashow.js";
 // import { local } from "./compontes/local.js";
 import { data } from "./compontes/local.js";
 import { removeBefore } from "./helper/removebefor.js";
+
 window.onload = () => {
   document.forms.userInput.addEventListener("submit", formSubmission);
   // document.forms.userInput.li.getLocal();
@@ -10,6 +11,14 @@ window.onload = () => {
   const f1 = showLocal(data);
   console.log(f1);
   document.getElementById("li").appendChild(showLocal(data));
+
+  const hamburger = document.getElementById("hamburger");
+  const navUL = document.getElementById("nav-ul");
+
+  hamburger.addEventListener("click", () => {
+    navUL.classList.toggle("show");
+    console.log("hello");
+  });
 
   // document.getElementById("li").innerHTML = local.description;
   // li.addEventListener("click", () => {
