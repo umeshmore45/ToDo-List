@@ -252,6 +252,16 @@ footer {
     background-color: black;
   }
   .button-local {
-    width: 40%;
+    width: 44%;
+    margin-left: 0;
+    margin-right: 0.5%;
+  }
+
+  .links-items1 {
+    margin: 0%;
+    width: 100%;
+    background-color: black;
+    padding: 0;
+    height: 3vh;
   }
 }
