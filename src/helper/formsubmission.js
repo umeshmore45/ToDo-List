@@ -17,8 +17,8 @@ export const formSubmission = (event) => {
   let taskValue = document.forms.userInput.taskInput.value;
   if (isMarkUp(taskValue) && isStringEmpty(taskValue)) {
     ToDoData.push(taskObject);
-    localStorage.setItem("data", JSON.stringify(ToDoData));
     document.getElementById("userList").appendChild(Task(taskObject));
     document.forms.userInput.taskInput.value = "";
+    localStorage.setItem("data", JSON.stringify(ToDoData));
   }
 };

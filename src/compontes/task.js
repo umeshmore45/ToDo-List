@@ -16,6 +16,5 @@ export const Task = (taskObject) => {
     removeBefore(taskObject.id);
   });
   li.append(button);
-  //li.append(button1);
   return li;
 };

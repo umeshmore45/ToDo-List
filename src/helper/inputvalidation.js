@@ -8,13 +8,12 @@ export const isStringEmpty = (str) => {
 };
 
 export const isMarkUp = (str) => {
-  var letters = /^[0-9a-zA-Z]+$/;
+  var letters = /^[a-zA-Z]+$/;
   if (str.match(letters)) {
     return true;
   } else {
     document.forms.userInput.taskInput.value = "";
     window.alert("Add Some Task");
-    console.log("1");
     return false;
   }
 };

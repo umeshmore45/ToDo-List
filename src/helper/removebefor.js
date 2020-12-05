@@ -1,11 +1,10 @@
-export const removeBefore = (id) => {
-  for (var i = 0; i < localStorage.length; i++) {
-    let data = JSON.parse(localStorage.getItem(localStorage.key(i)));
+import { ToDoData } from "../todolistdata.js";
 
-    if (id === data.id) {
-      localStorage.removeItem(localStorage.key(i));
-      console.log(id);
-      console.log(data.id);
+export const removeBefore = (id) => {
+  ToDoData.forEach((element, index) => {
+    if (id == element.id) {
+      ToDoData.splice(index, 1);
     }
-  }
+  });
+  localStorage.setItem("data", JSON.stringify(ToDoData));
 };
