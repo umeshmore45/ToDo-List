@@ -210,16 +210,17 @@ footer {
     width: 80%;
     height: 6vh;
     margin-left: 1%;
-    font-size: 4vh;
+    font-size: 3vh;
   }
   main {
-    width: 99.5%;
+    width: 99%;
     margin-top: 30%;
+    margin-left: 0;
   }
 
   .li-tag button {
     width: 30%;
-    font-size: 3vh;
+    font-size: 2vh;
   }
 
   footer {
@@ -258,6 +259,7 @@ footer {
     width: 27%;
     margin-left: 5%;
     margin-right: 0.5%;
+    font-size: 2vh;
   }
 
   .links-items1 {
@@ -270,5 +272,6 @@ footer {
   .li-items1 {
     width: 80%;
     margin-left: 0;
+    font-size: 3vh;
   }
 }
